@@ -1,0 +1,107 @@
+<resources>
+    <string name="app_name">SRCCON</string>
+    <string name="page_connection">연결</string>
+    <string name="page_control">제어</string>
+    <string name="page_settings">설정</string>
+
+    <string name="theme_light">라이트</string>
+    <string name="theme_dark">다크</string>
+    <string name="theme_night">야간 시야</string>
+    <string name="interface_section">인터페이스</string>
+    <string name="theme_label">테마</string>
+
+    <string name="status_disconnected">연결 끊김</string>
+    <string name="status_ready_usb">준비됨 · USB</string>
+    <string name="status_ready_demo">준비됨 · 데모</string>
+    <string name="status_preparing">준비 중</string>
+    <string name="status_manual">수동 ON</string>
+    <string name="status_exposure">노출</string>
+    <string name="status_stopping">정지 중</string>
+    <string name="status_fault">오류</string>
+    <string name="relay_unknown">릴레이 상태 알 수 없음</string>
+    <string name="relay_on_sent">ON 명령 전송됨</string>
+    <string name="relay_off_sent">OFF 명령 전송됨</string>
+
+    <string name="usb_devices">USB 시리얼 장치</string>
+    <string name="no_usb_devices">호환 장치를 찾지 못했습니다</string>
+    <string name="select_device_first">연결하기 전에 장치를 선택하세요.</string>
+    <string name="scan_is_passive">검색은 설명자와 드라이버 일치 여부만 확인합니다. 포트를 열거나 점유하지 않습니다.</string>
+    <string name="action_scan">검색</string>
+    <string name="action_connect">연결</string>
+    <string name="action_disconnect">연결 해제</string>
+    <string name="action_demo">데모 모드</string>
+    <string name="action_request_notifications">알림 사용</string>
+    <string name="notification_permission_note">포그라운드 노출 상태와 STOP을 계속 표시하려면 알림을 사용하세요.</string>
+    <string name="device_previously_used">이전에 사용함</string>
+    <string name="device_permission_granted">권한 허용됨</string>
+    <string name="device_permission_required">권한 필요</string>
+    <string name="device_port_count">포트: %1$d</string>
+    <string name="device_driver">드라이버: %1$s</string>
+    <string name="device_vid_pid">VID/PID: %1$04X:%2$04X</string>
+    <string name="device_manufacturer">제조사: %1$s</string>
+    <string name="device_product">제품: %1$s</string>
+    <string name="device_serial">시리얼: %1$s</string>
+    <string name="device_session_id">세션 경로: %1$s</string>
+    <string name="not_available">정보 없음</string>
+
+    <string name="protocol">릴레이 프로토콜</string>
+    <string name="profile_vctec">VCTEC / NOYITO</string>
+    <string name="profile_read_only">내장 · 읽기 전용</string>
+    <string name="serial_summary">9600 baud · 8N1 · DTR/RTS 꺼짐</string>
+    <string name="command_on">ON</string>
+    <string name="command_off">OFF</string>
+    <string name="action_validate">검증</string>
+    <string name="profile_valid">프로필이 유효합니다. ON과 OFF 명령을 정상적으로 해석했습니다.</string>
+    <string name="ownership_note_title">하드웨어 소유권</string>
+    <string name="ownership_note">검색, 선택, 권한, 연결, 릴레이 동작은 서로 분리됩니다. SRCCON은 발견한 장치에 자동 연결하지 않습니다.</string>
+
+    <string name="relay_status">릴레이 명령 상태</string>
+    <string name="operation">작업</string>
+    <string name="remaining">남은 시간</string>
+    <string name="seconds_value">%1$.1f초</string>
+    <string name="manual_control">수동 릴레이</string>
+    <string name="manual_note">수동 ON은 OFF 또는 STOP이 성공할 때까지 논리적 소유권을 유지합니다.</string>
+    <string name="action_on">ON</string>
+    <string name="action_off">OFF</string>
+    <string name="single_exposure">단일 노출</string>
+    <string name="exposure_seconds">노출 시간(초)</string>
+    <string name="action_start">시작</string>
+    <string name="action_stop">STOP</string>
+    <string name="action_safety_off">안전 OFF / 복구</string>
+    <string name="fault_recovery_note">물리 릴레이 상태를 알 수 없습니다. 의도한 장치에 다시 연결하고 안전 OFF를 명시적으로 전송하세요.</string>
+    <string name="connect_to_control">장치를 연결하거나 데모 모드를 시작하면 제어 기능을 사용할 수 있습니다.</string>
+
+    <string name="safety_section">안전</string>
+    <string name="maximum_exposure">최대 노출 시간(초)</string>
+    <string name="action_save">저장</string>
+    <string name="safety_summary">모든 ON은 유효한 OFF 명령과 성공한 사전 OFF가 필요합니다. ON은 2회, OFF는 3회 시도합니다.</string>
+    <string name="about_section">정보</string>
+    <string name="version_label">버전 %1$s</string>
+    <string name="publisher_label">SongPaHaeChi 개발 및 배포</string>
+    <string name="validation_status">소프트웨어 빌드 검증 완료 · 하드웨어 검증 대기</string>
+    <string name="scope_note">0.0.1은 고정 VCTEC 프로필, 수동 제어와 단일 노출을 포함합니다. Burst와 사용자 프로필 가져오기/내보내기는 이후 버전에 추가할 예정입니다.</string>
+
+    <string name="message_scanning">연결된 USB 시리얼 장치를 검색하는 중…</string>
+    <string name="message_scan_complete">호환 USB 시리얼 장치 %1$d개를 찾았습니다</string>
+    <string name="message_select_device">사용할 USB 시리얼 장치를 먼저 선택하세요</string>
+    <string name="message_requesting_permission">USB 권한을 요청하는 중…</string>
+    <string name="message_permission_denied">USB 권한이 거부되었습니다</string>
+    <string name="message_connected">%1$s 사용 준비가 완료되었습니다</string>
+    <string name="message_demo_ready">데모 릴레이가 준비되었습니다. 실제 USB 명령은 전송하지 않습니다.</string>
+    <string name="message_disconnected">연결을 해제했습니다</string>
+    <string name="message_busy">연결을 해제하기 전에 실행 중인 작업을 정지하세요</string>
+    <string name="message_profile_valid">VCTEC / NOYITO 프로필을 검증했습니다</string>
+    <string name="message_invalid_duration">1초부터 %1$d초 사이의 노출 시간을 입력하세요</string>
+    <string name="message_max_saved">최대 노출 시간을 %1$d초로 저장했습니다</string>
+    <string name="message_operation_failed">작업 실패: %1$s</string>
+    <string name="message_notifications_required">포그라운드 STOP을 표시하려면 알림 권한이 필요합니다.</string>
+    <string name="message_device_detached">USB 릴레이가 분리되었습니다. 물리 릴레이 상태를 알 수 없습니다</string>
+
+    <string name="notification_channel">진행 중인 셔터 작업</string>
+    <string name="notification_preparing">릴레이 준비 중</string>
+    <string name="notification_manual">수동 릴레이 ON</string>
+    <string name="notification_exposure">노출 · %1$.1f초 남음</string>
+    <string name="notification_stopping">정지 및 OFF 전송 중</string>
+    <string name="notification_fault">오류 · 릴레이 상태 알 수 없음</string>
+    <string name="notification_stop">STOP</string>
+</resources>

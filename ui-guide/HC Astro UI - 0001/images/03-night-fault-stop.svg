@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="605" height="1280" viewBox="0 0 605 1280" role="img" aria-labelledby="title desc">
+  <title id="title">SRCCON Night Vision fault and STOP screen</title>
+  <desc id="desc">A red-only, code-drawn phone mockup showing the result of STOP, a safety OFF failure, unknown relay state, and explicit recovery steps.</desc>
+  <defs>
+    <clipPath id="screen"><rect width="605" height="1280" rx="30"/></clipPath>
+    <style>
+      .app { font-family: Roboto, "Noto Sans KR", "Segoe UI", sans-serif; fill: #D9565B; }
+      .muted { fill: #BD454B; }
+      .title { font-size: 30px; font-weight: 700; }
+      .section { font-size: 22px; font-weight: 700; }
+      .reading { font-size: 34px; font-weight: 700; }
+      .body { font-size: 18px; }
+      .small { font-size: 15px; }
+      .label { font-size: 17px; font-weight: 600; }
+      .button { font-size: 17px; font-weight: 700; text-anchor: middle; dominant-baseline: middle; }
+    </style>
+    <filter id="glow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="0" stdDeviation="4" flood-color="#B4333A" flood-opacity="0.20"/>
+    </filter>
+  </defs>
+
+  <g clip-path="url(#screen)">
+    <rect width="605" height="1280" fill="#000000"/>
+
+    <!-- App bar -->
+    <text class="app title" x="24" y="55">SRCCON</text>
+    <circle cx="493" cy="38" r="12" fill="#B4333A" aria-label="Night Vision theme"/>
+    <g transform="translate(559 38)" stroke="#BD454B" stroke-width="4" stroke-linecap="round" aria-label="Menu">
+      <path d="M-14-10h28M-14 0h28M-14 10h28"/>
+    </g>
+
+    <!-- Primary navigation -->
+    <rect x="20" y="82" width="565" height="82" rx="18" fill="#100203"/>
+    <rect x="26" y="88" width="273" height="70" rx="35" fill="#050000" stroke="#7A2025" stroke-width="2"/>
+    <text class="app button" x="162" y="123">Connection</text>
+    <rect x="305" y="88" width="274" height="70" rx="35" fill="#B4333A"/>
+    <text class="button" x="442" y="123" fill="#130000">Control</text>
+
+    <!-- Fault pill -->
+    <rect x="20" y="180" width="565" height="62" rx="31" fill="#D3454B" filter="url(#glow)"/>
+    <path d="M45 194l14 28H31z" fill="#160000"/>
+    <text class="label" x="70" y="217" fill="#160000">FAULT</text>
+    <text class="small" x="565" y="216" text-anchor="end" fill="#160000">Relay state UNKNOWN</text>
+
+    <!-- Failure card -->
+    <rect x="20" y="260" width="565" height="234" rx="18" fill="#29090B" stroke="#7A2025" stroke-width="2"/>
+    <text class="app small muted" x="40" y="293">SAFETY RESULT</text>
+    <text class="app reading" x="40" y="337">Safety OFF failed</text>
+    <text class="app body" x="40" y="377">USB write could not be completed.</text>
+    <text class="app body" x="40" y="408">No physical OFF confirmation is available.</text>
+    <line x1="40" y1="431" x2="565" y2="431" stroke="#481014" stroke-width="2"/>
+    <text class="app small muted" x="40" y="463">The fault remains latched until explicit recovery.</text>
+
+    <!-- Interrupted operation card -->
+    <rect x="20" y="512" width="565" height="202" rx="18" fill="#200607"/>
+    <text class="app section" x="40" y="550">Burst interrupted</text>
+    <text class="app body" x="40" y="587">Frame</text>
+    <text class="app body" x="565" y="587" text-anchor="end">4 / 10</text>
+    <text class="app body" x="40" y="619">Owner</text>
+    <text class="app body" x="565" y="619" text-anchor="end">Invalidated</text>
+    <text class="app body" x="40" y="651">Device</text>
+    <text class="app body" x="565" y="651" text-anchor="end">Detached</text>
+    <text class="app small muted" x="40" y="687">Pending ON retries are cancelled.</text>
+
+    <!-- The STOP outcome stays visible without offering a redundant action -->
+    <rect x="20" y="732" width="565" height="78" rx="39" fill="#D3454B"/>
+    <text class="button" x="302" y="771" fill="#160000">STOPPED · SAFETY OFF REQUIRED</text>
+
+    <!-- Recovery card -->
+    <rect x="20" y="828" width="565" height="310" rx="18" fill="#170405" stroke="#481014" stroke-width="2"/>
+    <text class="app section" x="40" y="866">Recovery required</text>
+
+    <circle cx="55" cy="910" r="14" fill="#330608" stroke="#7A2025"/>
+    <text class="app small" x="55" y="916" text-anchor="middle">1</text>
+    <text class="app body" x="82" y="916">Select the intended USB device again.</text>
+
+    <circle cx="55" cy="958" r="14" fill="#330608" stroke="#7A2025"/>
+    <text class="app small" x="55" y="964" text-anchor="middle">2</text>
+    <text class="app body" x="82" y="964">Connect explicitly and grant permission.</text>
+
+    <circle cx="55" cy="1006" r="14" fill="#330608" stroke="#7A2025"/>
+    <text class="app small" x="55" y="1012" text-anchor="middle">3</text>
+    <text class="app body" x="82" y="1012">Send a user-visible safety OFF.</text>
+
+    <circle cx="55" cy="1054" r="14" fill="#330608" stroke="#7A2025"/>
+    <text class="app small" x="55" y="1060" text-anchor="middle">4</text>
+    <text class="app body" x="82" y="1060">Return to Idle only after success.</text>
+
+    <text class="app small muted" x="40" y="1104">Normal ON and START actions remain blocked.</text>
+
+    <text class="app small muted" x="302" y="1194" text-anchor="middle">Night Vision contains no gray, white, green, or blue UI roles.</text>
+    <text class="app small muted" x="302" y="1225" text-anchor="middle">HC Astro UI 0001 · Night Vision · Concept screen</text>
+  </g>
+  <rect x="1" y="1" width="603" height="1278" rx="29" fill="none" stroke="#7A2025" stroke-width="2"/>
+</svg>

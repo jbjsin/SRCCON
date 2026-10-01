@@ -1,0 +1,107 @@
+<resources>
+    <string name="app_name">SRCCON</string>
+    <string name="page_connection">Connection</string>
+    <string name="page_control">Control</string>
+    <string name="page_settings">Settings</string>
+
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="theme_night">Night vision</string>
+    <string name="interface_section">Interface</string>
+    <string name="theme_label">Theme</string>
+
+    <string name="status_disconnected">Disconnected</string>
+    <string name="status_ready_usb">Ready · USB</string>
+    <string name="status_ready_demo">Ready · Demo</string>
+    <string name="status_preparing">Preparing</string>
+    <string name="status_manual">Manual ON</string>
+    <string name="status_exposure">Exposure</string>
+    <string name="status_stopping">Stopping</string>
+    <string name="status_fault">Fault</string>
+    <string name="relay_unknown">Relay UNKNOWN</string>
+    <string name="relay_on_sent">ON command sent</string>
+    <string name="relay_off_sent">OFF command sent</string>
+
+    <string name="usb_devices">USB serial devices</string>
+    <string name="no_usb_devices">No compatible devices found</string>
+    <string name="select_device_first">Select a device before connecting.</string>
+    <string name="scan_is_passive">Scan only reads descriptors and driver matches. It never opens or claims a port.</string>
+    <string name="action_scan">SCAN</string>
+    <string name="action_connect">CONNECT</string>
+    <string name="action_disconnect">DISCONNECT</string>
+    <string name="action_demo">DEMO MODE</string>
+    <string name="action_request_notifications">ENABLE NOTIFICATIONS</string>
+    <string name="notification_permission_note">Enable notifications so foreground exposure state and STOP remain visible.</string>
+    <string name="device_previously_used">Previously used</string>
+    <string name="device_permission_granted">Permission granted</string>
+    <string name="device_permission_required">Permission required</string>
+    <string name="device_port_count">Ports: %1$d</string>
+    <string name="device_driver">Driver: %1$s</string>
+    <string name="device_vid_pid">VID/PID: %1$04X:%2$04X</string>
+    <string name="device_manufacturer">Manufacturer: %1$s</string>
+    <string name="device_product">Product: %1$s</string>
+    <string name="device_serial">Serial: %1$s</string>
+    <string name="device_session_id">Session path: %1$s</string>
+    <string name="not_available">Unavailable</string>
+
+    <string name="protocol">Relay protocol</string>
+    <string name="profile_vctec">VCTEC / NOYITO</string>
+    <string name="profile_read_only">Built-in · Read-only</string>
+    <string name="serial_summary">9600 baud · 8N1 · DTR/RTS off</string>
+    <string name="command_on">ON</string>
+    <string name="command_off">OFF</string>
+    <string name="action_validate">VALIDATE</string>
+    <string name="profile_valid">Profile is valid. ON and OFF commands parsed successfully.</string>
+    <string name="ownership_note_title">Hardware ownership</string>
+    <string name="ownership_note">Discovery, selection, permission, connection, and relay activation are separate. SRCCON never auto-connects a discovered device.</string>
+
+    <string name="relay_status">Relay command status</string>
+    <string name="operation">Operation</string>
+    <string name="remaining">Remaining</string>
+    <string name="seconds_value">%1$.1f s</string>
+    <string name="manual_control">Manual relay</string>
+    <string name="manual_note">Manual ON keeps logical ownership until OFF or STOP succeeds.</string>
+    <string name="action_on">ON</string>
+    <string name="action_off">OFF</string>
+    <string name="single_exposure">Single exposure</string>
+    <string name="exposure_seconds">Exposure seconds</string>
+    <string name="action_start">START</string>
+    <string name="action_stop">STOP</string>
+    <string name="action_safety_off">SAFETY OFF / RECOVER</string>
+    <string name="fault_recovery_note">Physical relay state is unknown. Reconnect the intended device and send an explicit Safety OFF.</string>
+    <string name="connect_to_control">Connect a device or start Demo Mode to enable controls.</string>
+
+    <string name="safety_section">Safety</string>
+    <string name="maximum_exposure">Maximum exposure seconds</string>
+    <string name="action_save">SAVE</string>
+    <string name="safety_summary">Every ON requires a valid OFF command and a successful preflight OFF. ON uses 2 attempts; OFF uses 3.</string>
+    <string name="about_section">About</string>
+    <string name="version_label">Version %1$s</string>
+    <string name="publisher_label">Developed and published by SongPaHaeChi</string>
+    <string name="validation_status">Software build validated · Hardware validation pending</string>
+    <string name="scope_note">0.0.1 includes the fixed VCTEC profile, Manual and Single Exposure. Burst and custom profile import/export are planned for a later version.</string>
+
+    <string name="message_scanning">Scanning attached USB serial devices…</string>
+    <string name="message_scan_complete">Found %1$d compatible USB serial device(s)</string>
+    <string name="message_select_device">Select the intended USB serial device first</string>
+    <string name="message_requesting_permission">Requesting USB permission…</string>
+    <string name="message_permission_denied">USB permission was denied</string>
+    <string name="message_connected">Ready to use %1$s</string>
+    <string name="message_demo_ready">Demo relay is ready. No physical USB commands will be sent.</string>
+    <string name="message_disconnected">Disconnected</string>
+    <string name="message_busy">Stop the active operation before disconnecting</string>
+    <string name="message_profile_valid">VCTEC / NOYITO profile validated</string>
+    <string name="message_invalid_duration">Enter an exposure from 1 to %1$d seconds</string>
+    <string name="message_max_saved">Maximum exposure saved: %1$d seconds</string>
+    <string name="message_operation_failed">Operation failed: %1$s</string>
+    <string name="message_notifications_required">Notification permission is required for a visible foreground STOP action.</string>
+    <string name="message_device_detached">USB relay detached; physical relay state is UNKNOWN</string>
+
+    <string name="notification_channel">Active shutter operations</string>
+    <string name="notification_preparing">Preparing relay</string>
+    <string name="notification_manual">Manual relay ON</string>
+    <string name="notification_exposure">Exposure · %1$.1f s remaining</string>
+    <string name="notification_stopping">Stopping and sending OFF</string>
+    <string name="notification_fault">Fault · Relay state UNKNOWN</string>
+    <string name="notification_stop">STOP</string>
+</resources>

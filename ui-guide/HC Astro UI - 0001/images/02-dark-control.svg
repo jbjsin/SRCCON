@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="605" height="1280" viewBox="0 0 605 1280" role="img" aria-labelledby="title desc">
+  <title id="title">SRCCON Dark theme Control screen</title>
+  <desc id="desc">A code-drawn phone mockup showing idle relay control with Manual, Single Exposure, and Burst modes.</desc>
+  <defs>
+    <clipPath id="screen"><rect width="605" height="1280" rx="30"/></clipPath>
+    <style>
+      .app { font-family: Roboto, "Noto Sans KR", "Segoe UI", sans-serif; fill: #E6E2E8; }
+      .muted { fill: #C9C5CD; }
+      .title { font-size: 30px; font-weight: 700; }
+      .section { font-size: 22px; font-weight: 700; }
+      .reading { font-size: 35px; font-weight: 700; }
+      .body { font-size: 18px; }
+      .small { font-size: 15px; }
+      .label { font-size: 17px; font-weight: 600; }
+      .button { font-size: 17px; font-weight: 700; text-anchor: middle; dominant-baseline: middle; }
+    </style>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.34"/>
+    </filter>
+  </defs>
+
+  <g clip-path="url(#screen)">
+    <rect width="605" height="1280" fill="#111216"/>
+
+    <!-- App bar -->
+    <text class="app title" x="24" y="55">SRCCON</text>
+    <g transform="translate(493 38)" aria-label="Dark theme">
+      <circle r="12" fill="#B1A05D"/>
+      <path d="M0-12a12 12 0 0 0 0 24z" fill="#211F14"/>
+      <circle r="12" fill="none" stroke="#C7BA83" stroke-width="2"/>
+    </g>
+    <g transform="translate(559 38)" stroke="#C9C5CD" stroke-width="4" stroke-linecap="round" aria-label="Menu">
+      <path d="M-14-10h28M-14 0h28M-14 10h28"/>
+    </g>
+
+    <!-- Primary navigation -->
+    <rect x="20" y="82" width="565" height="82" rx="18" fill="#1D1B20"/>
+    <rect x="26" y="88" width="273" height="70" rx="35" fill="#111216" stroke="#C9C5CD" stroke-width="2"/>
+    <text class="app button" x="162" y="123">Connection</text>
+    <rect x="305" y="88" width="274" height="70" rx="35" fill="#B1A05D"/>
+    <text class="button" x="442" y="123" fill="#211F14">Control</text>
+
+    <!-- Persistent status pill -->
+    <rect x="20" y="180" width="565" height="54" rx="27" fill="#DCEFE2"/>
+    <circle cx="44" cy="207" r="7" fill="#0A6A34"/>
+    <text class="label" x="60" y="213" fill="#0A6A34">Ready</text>
+    <text class="small" x="565" y="212" text-anchor="end" fill="#0A6A34">Relay state UNKNOWN</text>
+
+    <!-- State card -->
+    <rect x="20" y="252" width="565" height="188" rx="18" fill="#36343B" filter="url(#shadow)"/>
+    <text class="app small muted" x="40" y="284">LAST RELAY ACTION</text>
+    <text class="app reading" x="40" y="328">OFF command sent</text>
+    <line x1="40" y1="347" x2="565" y2="347" stroke="#C9C5CD" stroke-opacity="0.25"/>
+    <text class="app body" x="40" y="381">Device</text>
+    <text class="app body" x="565" y="381" text-anchor="end">USB Serial A</text>
+    <text class="app body" x="40" y="414">Profile</text>
+    <text class="app body" x="565" y="414" text-anchor="end">VCTEC CH340</text>
+
+    <!-- Manual card -->
+    <rect x="20" y="456" width="565" height="168" rx="18" fill="#36343B"/>
+    <text class="app section" x="40" y="491">Manual</text>
+    <text class="app small muted" x="40" y="520">Hold the relay until explicit OFF or STOP.</text>
+    <rect x="40" y="542" width="525" height="62" rx="31" fill="#B1A05D"/>
+    <text class="button" x="302" y="573" fill="#211F14">MANUAL ON</text>
+
+    <!-- Single exposure card -->
+    <rect x="20" y="642" width="565" height="188" rx="18" fill="#36343B"/>
+    <text class="app section" x="40" y="677">Single Exposure</text>
+    <text class="app small muted" x="40" y="705">Duration</text>
+    <rect x="40" y="723" width="324" height="74" rx="12" fill="#2A2B31" stroke="#C9C5CD" stroke-width="2"/>
+    <text class="app body" x="58" y="768">30.0 seconds</text>
+    <rect x="378" y="723" width="187" height="74" rx="37" fill="#B1A05D"/>
+    <text class="button" x="472" y="760" fill="#211F14">START</text>
+
+    <!-- Burst card -->
+    <rect x="20" y="848" width="565" height="216" rx="18" fill="#36343B"/>
+    <text class="app section" x="40" y="883">Burst</text>
+    <text class="app body" x="40" y="920">10 frames × 30.0 s</text>
+    <text class="app small muted" x="40" y="949">2.0 s interval · no delay after final frame</text>
+    <rect x="40" y="972" width="525" height="66" rx="33" fill="#B1A05D"/>
+    <text class="button" x="302" y="1005" fill="#211F14">START BURST</text>
+
+    <!-- Stable STOP region, disabled while idle -->
+    <rect x="20" y="1082" width="565" height="72" rx="36" fill="#2A2B31"/>
+    <text class="button" x="302" y="1118" fill="#77777D">STOP</text>
+    <text class="app small muted" x="302" y="1194" text-anchor="middle">A successful write does not confirm physical contact position.</text>
+    <text class="app small muted" x="302" y="1225" text-anchor="middle">HC Astro UI 0001 · Dark · Concept screen</text>
+  </g>
+  <rect x="1" y="1" width="603" height="1278" rx="29" fill="none" stroke="#C9C5CD" stroke-opacity="0.18" stroke-width="2"/>
+</svg>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="605" height="1280" viewBox="0 0 605 1280" role="img" aria-labelledby="title desc">
+  <title id="title">SRCCON Light theme Connection screen</title>
+  <desc id="desc">A code-drawn phone mockup showing explicit USB discovery, selection, and connection controls.</desc>
+  <defs>
+    <clipPath id="screen"><rect width="605" height="1280" rx="30"/></clipPath>
+    <style>
+      .app { font-family: Roboto, "Noto Sans KR", "Segoe UI", sans-serif; fill: #1D1A20; }
+      .muted { fill: #4A454E; }
+      .title { font-size: 30px; font-weight: 700; }
+      .section { font-size: 22px; font-weight: 700; }
+      .body { font-size: 18px; }
+      .small { font-size: 15px; }
+      .label { font-size: 17px; font-weight: 600; }
+      .button { font-size: 17px; font-weight: 700; text-anchor: middle; dominant-baseline: middle; }
+    </style>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#211047" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <g clip-path="url(#screen)">
+    <rect width="605" height="1280" fill="#FFF8FF"/>
+
+    <!-- App bar -->
+    <text class="app title" x="24" y="55">SRCCON</text>
+    <g transform="translate(493 38)" stroke="#6242B5" stroke-width="3" fill="none" aria-label="Light theme">
+      <circle r="9"/>
+      <path d="M0-17v-7M0 17v7M-17 0h-7M17 0h7M-12-12l-5-5M12 12l5 5M12-12l5-5M-12 12l-5 5"/>
+    </g>
+    <g transform="translate(559 38)" stroke="#4A454E" stroke-width="4" stroke-linecap="round" aria-label="Menu">
+      <path d="M-14-10h28M-14 0h28M-14 10h28"/>
+    </g>
+
+    <!-- Primary navigation -->
+    <rect x="20" y="82" width="565" height="82" rx="18" fill="#F7F2FA"/>
+    <rect x="26" y="88" width="273" height="70" rx="35" fill="#6242B5"/>
+    <text class="app button" x="162" y="123" fill="#FFFFFF">Connection</text>
+    <rect x="305" y="88" width="274" height="70" rx="35" fill="#FFF8FF" stroke="#4A454E" stroke-width="2"/>
+    <text class="app button" x="442" y="123">Control</text>
+
+    <!-- Persistent status pill -->
+    <rect x="20" y="180" width="565" height="54" rx="27" fill="#E9E2EB"/>
+    <circle cx="44" cy="207" r="7" fill="#4A454E"/>
+    <text class="app label" x="60" y="213">Selected</text>
+    <text class="app small muted" x="565" y="212" text-anchor="end">Permission not requested</text>
+
+    <!-- Device selection card -->
+    <rect x="20" y="252" width="565" height="488" rx="18" fill="#E6E0E9" filter="url(#shadow)"/>
+    <text class="app section" x="40" y="288">USB devices</text>
+    <text class="app small muted" x="40" y="316">2 compatible serial devices found</text>
+
+    <circle cx="57" cy="360" r="14" fill="none" stroke="#6242B5" stroke-width="3"/>
+    <circle cx="57" cy="360" r="7" fill="#6242B5"/>
+    <text class="app label" x="84" y="356">USB Serial A</text>
+    <text class="app small muted" x="84" y="381">CH340 / CH341 serial</text>
+    <text class="app small muted" x="84" y="414">VID 1A86 · PID 7523</text>
+    <text class="app small muted" x="84" y="438">Path /dev/bus/usb/001/004 · session detail</text>
+    <line x1="40" y1="462" x2="565" y2="462" stroke="#4A454E" stroke-opacity="0.35"/>
+
+    <circle cx="57" cy="505" r="14" fill="none" stroke="#4A454E" stroke-width="2"/>
+    <text class="app label" x="84" y="501">USB Serial B</text>
+    <text class="app small muted" x="84" y="526">CH340 / CH341 serial</text>
+    <line x1="40" y1="552" x2="565" y2="552" stroke="#4A454E" stroke-opacity="0.35"/>
+
+    <text class="app small muted" x="40" y="584">Select the intended device before Connect.</text>
+    <rect x="40" y="612" width="247" height="70" rx="35" fill="none" stroke="#6242B5" stroke-width="2"/>
+    <text class="app button" x="164" y="647" fill="#6242B5">SCAN</text>
+    <rect x="299" y="612" width="266" height="70" rx="35" fill="#6242B5"/>
+    <text class="button" x="432" y="647" fill="#FFFFFF">CONNECT</text>
+    <text class="app small muted" x="40" y="713">Scan lists devices only. It never opens a serial port.</text>
+
+    <!-- Informational safety card -->
+    <rect x="20" y="758" width="565" height="210" rx="18" fill="#F3EDF7"/>
+    <text class="app section" x="40" y="796">Connection notes</text>
+    <circle cx="47" cy="831" r="4" fill="#6242B5"/>
+    <text class="app body" x="62" y="837">Connect requests USB permission.</text>
+    <circle cx="47" cy="869" r="4" fill="#6242B5"/>
+    <text class="app body" x="62" y="875">Selection never follows VID/PID alone.</text>
+    <circle cx="47" cy="907" r="4" fill="#6242B5"/>
+    <text class="app body" x="62" y="913">A busy device stays unclaimed.</text>
+    <text class="app small muted" x="40" y="947">DISCOVER → INFORM → SELECT → CONNECT</text>
+
+    <!-- Active profile card -->
+    <rect x="20" y="986" width="565" height="174" rx="18" fill="#E6E0E9"/>
+    <text class="app section" x="40" y="1024">Relay profile</text>
+    <text class="app label" x="40" y="1060">VCTEC CH340 · Built-in</text>
+    <text class="app body" x="40" y="1094">9600 · 8N1 · No flow control</text>
+    <text class="app small muted" x="40" y="1130">Profile hints do not select USB hardware.</text>
+
+    <text class="app small muted" x="302" y="1225" text-anchor="middle">HC Astro UI 0001 · Light · Concept screen</text>
+  </g>
+  <rect x="1" y="1" width="603" height="1278" rx="29" fill="none" stroke="#211047" stroke-opacity="0.18" stroke-width="2"/>
+</svg>

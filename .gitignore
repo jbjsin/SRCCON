@@ -1,0 +1,14 @@
+*.iml
+.codex-remote-attachments/
+.gradle/
+.gradle-user-home/
+.idea/
+.kotlin/
+/local.properties
+/build/
+/app/build/
+/captures/
+/.externalNativeBuild/
+/.cxx/
+*.jks
+*.keystore
